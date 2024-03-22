@@ -16,6 +16,66 @@
   background-color: antiquewhite;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 150px;
+}
+.main header .logo {
+  width: 15%;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main header .logo h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.main header .searchbar {
+  width: 60%;
+  height: 40px;
+  background-color: rgb(191, 234, 243);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin: 0px 100px;
+}
+.main header .searchbar i {
+  font-size: 1.8rem;
+}
+.main header .searchbar input {
+  width: 90%;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background-color: rgb(191, 234, 243);
+}
+.main header .nav-items {
+  width: 30%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+.main header .nav-items span {
+  font-size: 1.3rem;
+}
+.main header .nav-items span i {
+  font-size: 1.5rem;
+}
+.main header .nav-items .ri-shopping-cart-2-fill {
+  font-size: 2rem;
+}
+.main header .nav-items .profile-circle {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(248, 244, 244);
+  border-radius: 50%;
 }
 .main .content-body {
   width: 100%;
@@ -25,32 +85,44 @@
 }
 .main .content-body .hero {
   width: 100%;
-  height: calc(100% - 84px);
+  height: 100%;
   display: flex;
   justify-content: space-between;
-  gap: 10%;
+  gap: 6%;
+  background-color: orange;
 }
 .main .content-body .hero .categories-section {
   width: 15%;
-  height: 80vh;
+  height: 82vh;
   background-color: orchid;
+  border-radius: 12px;
 }
 .main .content-body .hero .hero-content-section {
   width: 100%;
-  height: 800px;
+  height: 755px;
   display: flex;
   flex-direction: column;
-  gap: 10%;
+  gap: 70px;
 }
 .main .content-body .hero .hero-content-section .top-content {
   width: 100%;
   height: 450px;
+  border-radius: 12px;
   background-color: blue;
 }
 .main .content-body .hero .hero-content-section .bottom-content {
   width: 100%;
-  height: 200px;
+  height: 300px;
+  border-radius: 12px;
   background-color: rgb(43, 214, 83);
 }
-
-/*# sourceMappingURL=style.css.map */
+.main .content-body .page-2 {
+  width: 100%;
+  height: 100vh;
+  background-color: gray;
+}
+.main .content-body .page-2 .page-banner-content {
+  width: 100%;
+  height: 250px;
+  background-color: pink;
+}/*# sourceMappingURL=style.css.map */
