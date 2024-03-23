@@ -26,6 +26,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: default;
       h2 {
         font-size: 2.5rem;
         font-weight: 500;
@@ -59,6 +60,7 @@
       display: flex;
       align-items: center;
       gap: 80px;
+      cursor: pointer;
 
       span {
         font-size: 1.3rem;
@@ -86,7 +88,7 @@
     width: 100%;
     min-height: 100vh;
     padding: 50px 150px;
-    background-color: white;
+    background-color: #f1f2f4;
 
     .hero {
       width: 100%;
@@ -94,7 +96,7 @@
       display: flex;
       justify-content: space-between;
       gap: 6%;
-      background-color: orange;
+      // background-color: orange;
 
       .categories-section {
         width: 15%;
@@ -113,13 +115,25 @@
           width: 100%;
           height: 450px;
           border-radius: 12px;
+          overflow: hidden;
           background-color: blue;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
         }
         .bottom-content {
           width: 100%;
           height: 300px;
           border-radius: 12px;
           background-color: rgb(43, 214, 83);
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
         }
       }
     }
@@ -127,14 +141,63 @@
     .page-2 {
       width: 100%;
       height: 100vh;
-      background-color: gray;
+      // background-color: gray;
+      padding-top: 70px;
 
       .page-banner-content {
         width: 100%;
         height: 250px;
         background-color: pink;
-        // margin-top: 250px;
+        border-radius: 10px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+        }
       }
+
+      .cards-grid {
+        width: 100%;
+        height: 880px;
+        margin-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+        gap: 40px;
+        background-color: white;
+
+        .card {
+          width: 370px;
+          height: 400px;
+          border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: center;
+          border: 1px solid black;
+          img {
+            transition: all 0.2s;
+            width: 250px;
+            height: 270px;
+            margin-top: 20px;
+            &:hover {
+              scale: 1.03;
+              cursor: pointer;
+            }
+          }
+          .details-section {
+            width: 100%;
+            height: 120px;
+            background-color: beige;
+          }
+        }
+      }
+    }
+
+    .page3 {
+      width: 100%;
+      height: 100vh;
     }
   }
 }
