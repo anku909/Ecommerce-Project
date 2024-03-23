@@ -1,2 +1,7 @@
 **/*.scss
-.css.map
+
+# Sass cache
+.sass-cache/
+
+# Source maps
+**/*.css.map
