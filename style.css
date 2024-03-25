@@ -8,7 +8,7 @@
 .main {
   width: 100%;
   min-height: 100vh;
-  background-color: rgb(204, 204, 204);
+  background-color: #f1f2f4;
 }
 .main header {
   width: 100%;
@@ -257,4 +257,92 @@
   width: 215px;
   height: 215px;
   border: 1px solid black;
+}
+.main .content-body .page4 {
+  width: 100%;
+  height: 100vh;
+  padding: 60px 0px;
+}
+.main .content-body .page4 .page4-content-box {
+  width: 100%;
+  height: 350px;
+  background-color: white;
+}
+.main .content-body .page4 .all-best-mix {
+  width: 100%;
+  height: 400px;
+  margin-top: 60px;
+  padding: 20px 0px;
+  background-color: white;
+}
+.main .content-body .page4 .all-best-mix .title-box {
+  width: 300px;
+  height: 50px;
+  background-color: rgb(228, 228, 227);
+}
+.main .content-body .page4 .all-best-mix .all-mix-cards-div {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 0px;
+  overflow: hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.main .content-body .page4 .all-best-mix .all-mix-cards-div::-webkit-scrollbar {
+  display: none;
+}
+.main .content-body .page4 .all-best-mix .all-mix-cards-div .card-div-2 {
+  min-width: 200vw;
+  height: 80%;
+  display: flex;
+  justify-content: start;
+  flex-shrink: 0;
+  gap: 30px;
+}
+.main .content-body .page4 .all-best-mix .all-mix-cards-div .card-div-2 .mix-card {
+  width: 230px;
+  height: 260px;
+  border: 1px solid black;
+}
+.main .content-body .page5 {
+  width: 100%;
+  min-height: 115vh;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.main .content-body .page5 .cards-types {
+  width: 390px;
+  height: 450px;
+  border: 1px solid black;
+  background-color: white;
+}
+.main .footer {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+}
+.main .footer .go-to-top-button {
+  width: 300px;
+  height: 150px;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50px;
+  z-index: 9;
+  border: none;
+  outline: none;
+  background-color: rgb(27, 27, 27);
+}
+.main .footer .footer-content-div {
+  width: 100%;
+  height: 40vh;
+  position: absolute;
+  top: 60px;
+  z-index: 999;
+  border: none;
+  background-color: rgb(27, 27, 27);
 }/*# sourceMappingURL=style.css.map */
