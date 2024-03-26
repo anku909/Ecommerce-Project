@@ -159,7 +159,8 @@
       .cards-grid {
         width: 100%;
         height: 880px;
-        margin-top: 70px;
+        margin-top: 100px;
+        padding: 30px 80px;
         display: flex;
         flex-wrap: wrap;
         justify-content: start;
@@ -168,28 +169,29 @@
         background-color: white;
 
         .card {
-          width: 370px;
-          height: 400px;
+          width: 330px;
+          height: 380px;
           border-radius: 10px;
           display: flex;
           flex-direction: column;
-          justify-content: start;
+          justify-content: center;
           align-items: center;
           border: 1px solid black;
           img {
-            transition: all 0.2s;
-            width: 250px;
-            height: 270px;
-            margin-top: 20px;
+            transition: all 0.2s ease;
+            width: 230px;
+            margin-top: 40px;
             &:hover {
-              scale: 1.03;
+              scale: 1.02;
               cursor: pointer;
             }
           }
           .details-section {
             width: 100%;
             height: 120px;
-            background-color: beige;
+            // background-color: beige;
+            text-align: center;
+            padding-top: 15px;
           }
         }
       }
@@ -269,6 +271,7 @@
           flex-wrap: wrap;
           gap: 42px;
           justify-content: start;
+
           .page3-card {
             width: 215px;
             height: 215px;
@@ -287,6 +290,11 @@
         width: 100%;
         height: 350px;
         background-color: white;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
 
       .all-best-mix {
@@ -365,6 +373,22 @@
       border: none;
       outline: none;
       background-color: rgb(27, 27, 27);
+      a {
+        color: white;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 18px;
+        text-decoration: none;
+        font-weight: 500;
+        font-family: "Verdana";
+        transition: all 0.4s ease;
+        &:hover {
+          color: antiquewhite;
+          scale: 1.07;
+        }
+      }
     }
 
     .footer-content-div {
