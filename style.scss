@@ -303,10 +303,37 @@
         margin-top: 60px;
         padding: 20px 0px;
         background-color: white;
-        .title-box {
-          width: 300px;
-          height: 50px;
+        .top-div {
+          width: 100%;
+          height: 60px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
           background-color: rgb(228, 228, 227);
+          .title-div {
+            width: 200px;
+            height: 70%;
+            background-color: red;
+          }
+          .controls {
+            width: 100px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .left-btn {
+              width: 45px;
+              height: 45px;
+              border-radius: 50%;
+              background-color: orange;
+            }
+            .right-btn {
+              width: 45px;
+              height: 45px;
+              border-radius: 50%;
+              background-color: orange;
+            }
+          }
         }
 
         .all-mix-cards-div {
@@ -321,7 +348,7 @@
             display: none;
           }
           .card-div-2 {
-            min-width: 200vw;
+            min-width: 188vw;
             height: 80%;
             display: flex;
             justify-content: start;
@@ -333,6 +360,11 @@
               width: 230px;
               height: 260px;
               border: 1px solid black;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
             }
           }
         }
@@ -390,7 +422,7 @@
             }
           }
         }
-        #small-card-pc {
+        .mid-card {
           width: 100%;
           height: 75%;
           img {
@@ -408,6 +440,7 @@
             object-fit: cover;
           }
         }
+
         #top-big-card {
           width: 100%;
           height: 42%;
@@ -418,6 +451,7 @@
             object-fit: cover;
           }
         }
+
         .small-bottom-cards-div {
           width: 100%;
           height: 33%;
@@ -427,14 +461,23 @@
           gap: 6px;
           // background-color: rosybrown;
           .bottom-card {
-            width: 110px;
-            height: 90px;
-            margin-top: 25px;
+            width: 120px;
+            height: 80px;
+            margin-top: 15px;
             // background-color: orange;
+            img {
+              width: 100%;
+              height: 100%;
+              image-rendering: optimizeQuality;
+              object-fit: cover;
+            }
+            p {
+              font-size: 13px;
+            }
           }
         }
         .see-more-option {
-          margin-top: 8px;
+          margin-top: 12px;
           a {
             color: rgb(14, 164, 251);
             text-decoration: none;
@@ -450,7 +493,7 @@
     height: 40vh;
     // background-color: pink;
     position: relative;
-    .go-to-top-button {
+    .go-to-top {
       width: 300px;
       height: 150px;
       position: absolute;
@@ -464,7 +507,7 @@
       background-color: rgb(27, 27, 27);
       a {
         color: white;
-        font-size: 25px;
+        font-size: 35px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -472,10 +515,10 @@
         text-decoration: none;
         font-weight: 500;
         font-family: "Verdana";
-        transition: all 0.4s ease;
+        transition: all 0.5s ease;
         &:hover {
           color: antiquewhite;
-          scale: 1.07;
+          scale: 1.2;
         }
       }
     }

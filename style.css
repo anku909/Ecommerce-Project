@@ -281,10 +281,37 @@
   padding: 20px 0px;
   background-color: white;
 }
-.main .content-body .page4 .all-best-mix .title-box {
-  width: 300px;
-  height: 50px;
+.main .content-body .page4 .all-best-mix .top-div {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgb(228, 228, 227);
+}
+.main .content-body .page4 .all-best-mix .top-div .title-div {
+  width: 200px;
+  height: 70%;
+  background-color: red;
+}
+.main .content-body .page4 .all-best-mix .top-div .controls {
+  width: 100px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .content-body .page4 .all-best-mix .top-div .controls .left-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: orange;
+}
+.main .content-body .page4 .all-best-mix .top-div .controls .right-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: orange;
 }
 .main .content-body .page4 .all-best-mix .all-mix-cards-div {
   width: 100%;
@@ -298,7 +325,7 @@
   display: none;
 }
 .main .content-body .page4 .all-best-mix .all-mix-cards-div .card-div-2 {
-  min-width: 200vw;
+  min-width: 188vw;
   height: 80%;
   display: flex;
   justify-content: start;
@@ -309,6 +336,12 @@
   width: 230px;
   height: 260px;
   border: 1px solid black;
+}
+.main .content-body .page4 .all-best-mix .all-mix-cards-div .card-div-2 .mix-card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .main .content-body .page5 {
   width: 100%;
@@ -359,11 +392,11 @@
   -o-object-position: right;
      object-position: right;
 }
-.main .content-body .page5 .cards-types #small-card-pc {
+.main .content-body .page5 .cards-types .mid-card {
   width: 100%;
   height: 75%;
 }
-.main .content-body .page5 .cards-types #small-card-pc img {
+.main .content-body .page5 .cards-types .mid-card img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -399,12 +432,22 @@
   gap: 6px;
 }
 .main .content-body .page5 .cards-types .small-bottom-cards-div .bottom-card {
-  width: 110px;
-  height: 90px;
-  margin-top: 25px;
+  width: 120px;
+  height: 80px;
+  margin-top: 15px;
+}
+.main .content-body .page5 .cards-types .small-bottom-cards-div .bottom-card img {
+  width: 100%;
+  height: 100%;
+  image-rendering: optimizeQuality;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .content-body .page5 .cards-types .small-bottom-cards-div .bottom-card p {
+  font-size: 13px;
 }
 .main .content-body .page5 .cards-types .see-more-option {
-  margin-top: 8px;
+  margin-top: 12px;
 }
 .main .content-body .page5 .cards-types .see-more-option a {
   color: rgb(14, 164, 251);
@@ -417,7 +460,7 @@
   height: 40vh;
   position: relative;
 }
-.main .footer .go-to-top-button {
+.main .footer .go-to-top {
   width: 300px;
   height: 150px;
   position: absolute;
@@ -430,9 +473,9 @@
   outline: none;
   background-color: rgb(27, 27, 27);
 }
-.main .footer .go-to-top-button a {
+.main .footer .go-to-top a {
   color: white;
-  font-size: 25px;
+  font-size: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -440,11 +483,11 @@
   text-decoration: none;
   font-weight: 500;
   font-family: "Verdana";
-  transition: all 0.4s ease;
+  transition: all 0.5s ease;
 }
-.main .footer .go-to-top-button a:hover {
+.main .footer .go-to-top a:hover {
   color: antiquewhite;
-  scale: 1.07;
+  scale: 1.2;
 }
 .main .footer .footer-content-div {
   width: 100%;
