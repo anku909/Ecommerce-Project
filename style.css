@@ -287,16 +287,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(228, 228, 227);
 }
 .main .content-body .page4 .all-best-mix .top-div .title-div {
-  width: 200px;
+  width: 800px;
   height: 70%;
-  background-color: red;
+}
+.main .content-body .page4 .all-best-mix .top-div .title-div h4 {
+  font-size: 25px;
+  font-weight: 600;
+  padding-left: 10px;
 }
 .main .content-body .page4 .all-best-mix .top-div .controls {
-  width: 100px;
+  width: 120px;
   height: 80px;
+  margin-right: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -304,44 +308,57 @@
 .main .content-body .page4 .all-best-mix .top-div .controls .left-btn {
   width: 45px;
   height: 45px;
+  border: 1px solid rgb(155, 155, 155);
   border-radius: 50%;
-  background-color: orange;
+}
+.main .content-body .page4 .all-best-mix .top-div .controls .left-btn:hover {
+  background-color: #f3f3f3;
 }
 .main .content-body .page4 .all-best-mix .top-div .controls .right-btn {
   width: 45px;
   height: 45px;
+  border: 1px solid rgb(155, 155, 155);
   border-radius: 50%;
-  background-color: orange;
+}
+.main .content-body .page4 .all-best-mix .top-div .controls .right-btn:hover {
+  background-color: #f3f3f3;
 }
 .main .content-body .page4 .all-best-mix .all-mix-cards-div {
   width: 100%;
-  margin-top: 20px;
   padding: 10px 0px;
   overflow: hidden;
   overflow-x: scroll;
   overflow-y: hidden;
+  scroll-behavior: smooth;
 }
 .main .content-body .page4 .all-best-mix .all-mix-cards-div::-webkit-scrollbar {
   display: none;
 }
 .main .content-body .page4 .all-best-mix .all-mix-cards-div .card-div-2 {
-  min-width: 188vw;
+  min-width: 350%;
   height: 80%;
   display: flex;
   justify-content: start;
-  flex-shrink: 0;
   gap: 30px;
 }
 .main .content-body .page4 .all-best-mix .all-mix-cards-div .card-div-2 .mix-card {
-  width: 230px;
-  height: 260px;
-  border: 1px solid black;
+  width: 260px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(237, 237, 237);
+  border-radius: 10px;
 }
 .main .content-body .page4 .all-best-mix .all-mix-cards-div .card-div-2 .mix-card img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 180px;
+  height: 150px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  transition: all 0.3s ease;
+}
+.main .content-body .page4 .all-best-mix .all-mix-cards-div .card-div-2 .mix-card img:hover {
+  scale: 1.03;
 }
 .main .content-body .page5 {
   width: 100%;
@@ -484,10 +501,15 @@
   font-weight: 500;
   font-family: "Verdana";
   transition: all 0.5s ease;
+  animation: growNshrink 0.9s 0.2s infinite alternate ease-in-out;
 }
-.main .footer .go-to-top a:hover {
-  color: antiquewhite;
-  scale: 1.2;
+@keyframes growNshrink {
+  from {
+    scale: 0.9;
+  }
+  to {
+    scale: 1.2;
+  }
 }
 .main .footer .footer-content-div {
   width: 100%;
