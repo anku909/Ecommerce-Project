@@ -1,9 +1,8 @@
 let imageCardsDiv = document.querySelector(".card-div-2");
 let cardGrid = document.querySelector(".page3-cards-grid");
-let leftbtn = document.querySelector(".left-btn");
-let rightbtn = document.querySelector(".right-btn");
 let cardsDivScroll = document.querySelector(".all-mix-cards-div");
 
+let loadingBar = document.querySelector(".loading-bar");
 function onLeftClick() {
   cardsDivScroll.scrollLeft += -1000;
 }
@@ -69,3 +68,17 @@ function loadImage(data) {
     imageCardsDiv.appendChild(cardDiv);
   });
 }
+
+gsap.to(".loading-bar", {
+  width: "100%",
+  delay: 1,
+  duartion: 5,
+  opacity: 0,
+});
+gsap.to(".loading-animation", {
+  y: -1000,
+  delay: 2,
+  duartion: 5,
+  ease: "power1.in",
+  opacity: 0,
+});
