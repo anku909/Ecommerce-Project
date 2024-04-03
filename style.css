@@ -68,8 +68,13 @@
 .main header .nav-items span i {
   font-size: 1.5rem;
 }
-.main header .nav-items .ri-shopping-cart-2-fill {
+.main header .nav-items a {
+  text-decoration: none;
+  color: black;
+}
+.main header .nav-items a .ri-shopping-cart-2-fill {
   font-size: 2rem;
+  color: black;
 }
 .main header .nav-items .profile-circle {
   width: 50px;
@@ -117,7 +122,7 @@
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .main .content-body .hero .hero-content-section .bottom-content {
   width: 100%;
@@ -130,7 +135,7 @@
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .main .content-body .page-2 {
   width: 100%;
@@ -214,7 +219,12 @@
   gap: 80px;
   margin-top: 10px;
 }
-.main .content-body .page3 .feature-brands-section .brands-details-section .brand-details {
+.main
+  .content-body
+  .page3
+  .feature-brands-section
+  .brands-details-section
+  .brand-details {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -224,12 +234,23 @@
   border-radius: 50%;
   transition: border 0.2s ease;
 }
-.main .content-body .page3 .feature-brands-section .brands-details-section .brand-details img {
+.main
+  .content-body
+  .page3
+  .feature-brands-section
+  .brands-details-section
+  .brand-details
+  img {
   width: 60px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-.main .content-body .page3 .feature-brands-section .brands-details-section .brand-details:hover {
+.main
+  .content-body
+  .page3
+  .feature-brands-section
+  .brands-details-section
+  .brand-details:hover {
   border: 1px solid rgb(199, 199, 199);
 }
 .main .content-body .page3 .page3-cards-section {
@@ -244,12 +265,22 @@
   margin-bottom: 30px;
   gap: 200px;
 }
-.main .content-body .page3 .page3-cards-section .top-selling-section .season-top-picks {
+.main
+  .content-body
+  .page3
+  .page3-cards-section
+  .top-selling-section
+  .season-top-picks {
   width: 500px;
   height: 580px;
   border: 1px solid rgb(227, 227, 227);
 }
-.main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling {
+.main
+  .content-body
+  .page3
+  .page3-cards-section
+  .top-selling-section
+  .yearly-top-selling {
   width: 800px;
   height: 580px;
   background-color: #d8e2b2;
@@ -257,35 +288,73 @@
   border-radius: 5px;
   position: relative;
 }
-.main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling .heading-text {
+.main
+  .content-body
+  .page3
+  .page3-cards-section
+  .top-selling-section
+  .yearly-top-selling
+  .heading-text {
   width: 100%;
   height: 150px;
   padding-top: 20px;
   padding-left: 20px;
 }
-.main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling .heading-text h2 {
+.main
+  .content-body
+  .page3
+  .page3-cards-section
+  .top-selling-section
+  .yearly-top-selling
+  .heading-text
+  h2 {
   font-size: 40px;
 }
-.main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling .heading-text p {
+.main
+  .content-body
+  .page3
+  .page3-cards-section
+  .top-selling-section
+  .yearly-top-selling
+  .heading-text
+  p {
   padding-top: 12px;
   font-size: 18px;
   font-weight: 300;
 }
-.main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling img {
+.main
+  .content-body
+  .page3
+  .page3-cards-section
+  .top-selling-section
+  .yearly-top-selling
+  img {
   width: 550px;
   height: 550px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   position: absolute;
   bottom: 0px;
   left: 140px;
   transition: all 0.3s ease-in;
 }
-.main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling img:hover {
+.main
+  .content-body
+  .page3
+  .page3-cards-section
+  .top-selling-section
+  .yearly-top-selling
+  img:hover {
   scale: 1.02;
   filter: drop-shadow(0px 6px 6px rgb(153, 153, 153));
 }
-.main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling button {
+.main
+  .content-body
+  .page3
+  .page3-cards-section
+  .top-selling-section
+  .yearly-top-selling
+  button {
   position: absolute;
   bottom: 70px;
   left: 30px;
@@ -297,10 +366,23 @@
   filter: drop-shadow(0px 4px 2px rgb(199, 199, 199));
   transition: all 0.3s ease;
 }
-.main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling button:hover {
+.main
+  .content-body
+  .page3
+  .page3-cards-section
+  .top-selling-section
+  .yearly-top-selling
+  button:hover {
   scale: 0.98;
 }
-.main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling button a {
+.main
+  .content-body
+  .page3
+  .page3-cards-section
+  .top-selling-section
+  .yearly-top-selling
+  button
+  a {
   font-size: 25px;
   font-weight: 500;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -327,24 +409,54 @@
   border: 1px solid rgb(234, 234, 234);
   transition: all 0.2s ease-in;
 }
-.main .content-body .page3 .page3-cards-section .page3-cards-grid .page3-card:hover {
+.main
+  .content-body
+  .page3
+  .page3-cards-section
+  .page3-cards-grid
+  .page3-card:hover {
   border: 1px solid rgb(199, 199, 199);
 }
-.main .content-body .page3 .page3-cards-section .page3-cards-grid .page3-card img {
+.main
+  .content-body
+  .page3
+  .page3-cards-section
+  .page3-cards-grid
+  .page3-card
+  img {
   width: 190px;
   height: 140px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
-.main .content-body .page3 .page3-cards-section .page3-cards-grid .page3-card img:hover {
+.main
+  .content-body
+  .page3
+  .page3-cards-section
+  .page3-cards-grid
+  .page3-card
+  img:hover {
   scale: 1.03;
 }
-.main .content-body .page3 .page3-cards-section .page3-cards-grid .page3-card .text-title-div {
+.main
+  .content-body
+  .page3
+  .page3-cards-section
+  .page3-cards-grid
+  .page3-card
+  .text-title-div {
   width: 200px;
   height: 30px;
   margin-top: 15px;
 }
-.main .content-body .page3 .page3-cards-section .page3-cards-grid .page3-card .text-title-div h4 {
+.main
+  .content-body
+  .page3
+  .page3-cards-section
+  .page3-cards-grid
+  .page3-card
+  .text-title-div
+  h4 {
   font-size: 16px;
   font-weight: 500;
   text-align: center;
@@ -366,7 +478,7 @@
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .main .content-body .page4 .all-best-mix {
   width: 100%;
@@ -435,7 +547,13 @@
   justify-content: start;
   gap: 30px;
 }
-.main .content-body .page4 .all-best-mix .all-mix-cards-div .card-div-2 .mix-card {
+.main
+  .content-body
+  .page4
+  .all-best-mix
+  .all-mix-cards-div
+  .card-div-2
+  .mix-card {
   width: 260px;
   height: 250px;
   display: flex;
@@ -446,25 +564,60 @@
   border-radius: 10px;
   transition: all 0.2s ease-in;
 }
-.main .content-body .page4 .all-best-mix .all-mix-cards-div .card-div-2 .mix-card:hover {
+.main
+  .content-body
+  .page4
+  .all-best-mix
+  .all-mix-cards-div
+  .card-div-2
+  .mix-card:hover {
   border: 1px solid rgb(194, 194, 194);
 }
-.main .content-body .page4 .all-best-mix .all-mix-cards-div .card-div-2 .mix-card img {
+.main
+  .content-body
+  .page4
+  .all-best-mix
+  .all-mix-cards-div
+  .card-div-2
+  .mix-card
+  img {
   width: 160px;
   height: 140px;
   -o-object-fit: scale-down;
-     object-fit: scale-down;
+  object-fit: scale-down;
   transition: all 0.3s ease;
 }
-.main .content-body .page4 .all-best-mix .all-mix-cards-div .card-div-2 .mix-card img:hover {
+.main
+  .content-body
+  .page4
+  .all-best-mix
+  .all-mix-cards-div
+  .card-div-2
+  .mix-card
+  img:hover {
   scale: 1.03;
 }
-.main .content-body .page4 .all-best-mix .all-mix-cards-div .card-div-2 .mix-card .title-div {
+.main
+  .content-body
+  .page4
+  .all-best-mix
+  .all-mix-cards-div
+  .card-div-2
+  .mix-card
+  .title-div {
   width: 200px;
   height: 30px;
   margin-top: 20px;
 }
-.main .content-body .page4 .all-best-mix .all-mix-cards-div .card-div-2 .mix-card .title-div h4 {
+.main
+  .content-body
+  .page4
+  .all-best-mix
+  .all-mix-cards-div
+  .card-div-2
+  .mix-card
+  .title-div
+  h4 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -516,10 +669,10 @@
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   image-rendering: optimizeQuality;
   -o-object-position: right;
-     object-position: right;
+  object-position: right;
 }
 .main .content-body .page5 .cards-types .mid-card {
   width: 100%;
@@ -532,7 +685,7 @@
   width: 300px;
   height: 300px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .main .content-body .page5 .cards-types #card-joy {
   width: 100%;
@@ -545,7 +698,7 @@
   width: 300px;
   height: 300px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .main .content-body .page5 .cards-types #top-big-card {
   width: 100%;
@@ -556,7 +709,7 @@
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .main .content-body .page5 .cards-types .small-bottom-cards-div {
   width: 100%;
@@ -571,12 +724,18 @@
   height: 80px;
   margin-top: 15px;
 }
-.main .content-body .page5 .cards-types .small-bottom-cards-div .bottom-card img {
+.main
+  .content-body
+  .page5
+  .cards-types
+  .small-bottom-cards-div
+  .bottom-card
+  img {
   width: 100%;
   height: 100%;
   image-rendering: optimizeQuality;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .main .content-body .page5 .cards-types .small-bottom-cards-div .bottom-card p {
   font-size: 13px;
@@ -637,4 +796,4 @@
   z-index: 999;
   border: none;
   background-color: rgb(27, 27, 27);
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
