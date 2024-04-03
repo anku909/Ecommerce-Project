@@ -35,7 +35,7 @@
 .main header .searchbar {
   width: 60%;
   height: 40px;
-  background-color: rgb(191, 234, 243);
+  background-color: white;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -47,10 +47,12 @@
 }
 .main header .searchbar input {
   width: 90%;
+  height: 100%;
+  margin-left: 10px;
   border: none;
   outline: none;
-  border-radius: 15px;
-  background-color: rgb(191, 234, 243);
+  border-radius: 2px;
+  background-color: white;
 }
 .main header .nav-items {
   width: 30%;
@@ -166,7 +168,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgb(220, 218, 218);
+  border: 1px solid rgb(236, 236, 236);
+  transition: border 0.2s ease;
+}
+.main .content-body .page-2 .cards-grid .card:hover {
+  border: 1px solid rgb(216, 216, 216);
 }
 .main .content-body .page-2 .cards-grid .card img {
   transition: all 0.2s ease;
@@ -212,15 +218,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
-  height: 120px;
-  border: 1px solid rgb(197, 194, 194);
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgb(230, 229, 229);
   border-radius: 50%;
+  transition: border 0.2s ease;
 }
 .main .content-body .page3 .feature-brands-section .brands-details-section .brand-details img {
-  width: 80px;
+  width: 60px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.main .content-body .page3 .feature-brands-section .brands-details-section .brand-details:hover {
+  border: 1px solid rgb(199, 199, 199);
 }
 .main .content-body .page3 .page3-cards-section {
   width: 100%;
@@ -237,13 +247,13 @@
 .main .content-body .page3 .page3-cards-section .top-selling-section .season-top-picks {
   width: 500px;
   height: 580px;
-  border: 1px solid black;
+  border: 1px solid rgb(227, 227, 227);
 }
 .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling {
   width: 800px;
   height: 580px;
-  background-color: #e5e3e6;
-  border: 1px solid rgb(214, 214, 214);
+  background-color: #d8e2b2;
+  filter: drop-shadow(0px 4px 6px rgb(209, 208, 208));
   border-radius: 5px;
   position: relative;
 }
@@ -269,6 +279,11 @@
   position: absolute;
   bottom: 0px;
   left: 140px;
+  transition: all 0.3s ease-in;
+}
+.main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling img:hover {
+  scale: 1.02;
+  filter: drop-shadow(0px 6px 6px rgb(153, 153, 153));
 }
 .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling button {
   position: absolute;
@@ -459,18 +474,17 @@
 }
 .main .content-body .page5 {
   width: 100%;
-  min-height: 115vh;
-  padding: 50px 0px;
+  min-height: 120vh;
+  padding: 30px 0px;
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
-  gap: 14px;
-  background-color: pink;
+  gap: 10px;
 }
 .main .content-body .page5 .cards-types {
-  width: 390px;
+  width: 350px;
   height: 450px;
-  padding: 10px 30px;
+  padding: 10px 10px;
   border: 1px solid rgb(227, 227, 227);
   filter: drop-shadow(0px 2px 8px rgb(232, 232, 232));
   background-color: white;
@@ -482,7 +496,7 @@
   align-items: center;
 }
 .main .content-body .page5 .cards-types .heading-text h4 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
 }
 .main .content-body .page5 .cards-types .small-cards-div {
@@ -492,11 +506,11 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 .main .content-body .page5 .cards-types .small-cards-div .small-card {
-  width: 155px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
 }
 .main .content-body .page5 .cards-types .small-cards-div .small-card img {
   width: 100%;
@@ -509,21 +523,27 @@
 }
 .main .content-body .page5 .cards-types .mid-card {
   width: 100%;
-  height: 75%;
+  height: 73%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main .content-body .page5 .cards-types .mid-card img {
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .main .content-body .page5 .cards-types #card-joy {
   width: 100%;
   height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main .content-body .page5 .cards-types #card-joy img {
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
