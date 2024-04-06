@@ -21,16 +21,32 @@
   align-items: center;
   padding: 0px 150px;
 }
+@media screen and (max-width: 460px) {
+  .main header {
+    background-color: rgb(204, 204, 204);
+    height: 60px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 0px 25px;
+  }
+}
 .main header .logo {
   width: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: default;
+  background-color: red;
 }
 .main header .logo h2 {
   font-size: 2.5rem;
   font-weight: 500;
+}
+@media screen and (max-width: 460px) {
+  .main header .logo h2 {
+    font-size: 1.2rem;
+    font-family: 600;
+  }
 }
 .main header .searchbar {
   width: 60%;
@@ -42,8 +58,22 @@
   padding-left: 20px;
   margin: 0px 100px;
 }
+@media screen and (max-width: 460px) {
+  .main header .searchbar {
+    width: 38%;
+    height: 20px;
+    border-radius: 50px;
+    padding-left: 5px;
+    margin: 0px 0px;
+  }
+}
 .main header .searchbar i {
   font-size: 1.8rem;
+}
+@media screen and (max-width: 460px) {
+  .main header .searchbar i {
+    font-size: 0.8rem;
+  }
 }
 .main header .searchbar input {
   width: 90%;
@@ -52,7 +82,12 @@
   border: none;
   outline: none;
   border-radius: 2px;
-  background-color: white;
+}
+@media screen and (max-width: 460px) {
+  .main header .searchbar input {
+    margin-left: 2px;
+    border-radius: 50px;
+  }
 }
 .main header .nav-items {
   width: 30%;
@@ -60,13 +95,31 @@
   display: flex;
   align-items: center;
   gap: 80px;
+  background-color: pink;
   cursor: pointer;
+}
+@media screen and (max-width: 460px) {
+  .main header .nav-items {
+    width: 38%;
+    gap: 17px;
+    height: 30px;
+  }
 }
 .main header .nav-items span {
   font-size: 1.3rem;
 }
+@media screen and (max-width: 460px) {
+  .main header .nav-items span {
+    font-size: 1rem;
+  }
+}
 .main header .nav-items span i {
   font-size: 1.5rem;
+}
+@media screen and (max-width: 460px) {
+  .main header .nav-items span i {
+    font-size: 0.2rem;
+  }
 }
 .main header .nav-items a {
   text-decoration: none;
@@ -75,6 +128,11 @@
 .main header .nav-items a .ri-shopping-cart-2-fill {
   font-size: 2rem;
   color: rgb(63, 62, 62);
+}
+@media screen and (max-width: 460px) {
+  .main header .nav-items a .ri-shopping-cart-2-fill {
+    font-size: 1.1rem;
+  }
 }
 .main header .nav-items .profile-circle {
   width: 50px;
@@ -85,11 +143,26 @@
   background-color: rgb(248, 244, 244);
   border-radius: 50%;
 }
+@media screen and (max-width: 460px) {
+  .main header .nav-items .profile-circle {
+    width: 25px;
+    height: 25px;
+  }
+}
+.main header .nav-items .profile-circle img {
+  width: 15px;
+  height: 15px;
+}
 .main .content-body {
   width: 100%;
   min-height: 100vh;
   padding: 50px 150px;
   background-color: #f1f2f4;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body {
+    padding: 20px 10px;
+  }
 }
 .main .content-body .hero {
   width: 100%;
@@ -97,22 +170,137 @@
   display: flex;
   justify-content: space-between;
   gap: 6%;
+  background-color: orange;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .hero {
+    flex-direction: column;
+    justify-content: start;
+    gap: 0;
+  }
 }
 .main .content-body .hero .categories-section {
   width: 15%;
   height: 90.5vh;
-  padding: 30px 20px;
+  padding: 10px 20px;
   border: 1px solid rgb(222, 222, 222);
   border-radius: 12px;
+  background-color: red;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .hero .categories-section {
+    width: 100%;
+    height: 2%;
+    display: flex;
+    padding: 0px 0px;
+  }
 }
 .main .content-body .hero .categories-section .categorie-item1 {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  font-size: 14px;
   width: 100%;
   height: 15%;
   cursor: pointer;
+  background-color: pink;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .hero .categories-section .categorie-item1 {
+    width: 15%;
+    height: 80px;
+    font-size: 10px;
+  }
+}
+.main .content-body .hero .categories-section .categorie-item2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-size: 14px;
+  width: 100%;
+  height: 15%;
+  cursor: pointer;
+  background-color: orange;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .hero .categories-section .categorie-item2 {
+    width: 15%;
+    height: 80px;
+    font-size: 10px;
+  }
+}
+.main .content-body .hero .categories-section .categorie-item2 img {
+  width: 60px;
+  height: 80px;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .hero .categories-section .categorie-item2 img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.main .content-body .hero .categories-section .categorie-item3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-size: 14px;
+  width: 100%;
+  height: 15%;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.main .content-body .hero .categories-section .categorie-item3 img {
+  width: 60px;
+  height: 80px;
+}
+.main .content-body .hero .categories-section .categorie-item4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-size: 14px;
+  width: 100%;
+  height: 15%;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.main .content-body .hero .categories-section .categorie-item4 img {
+  width: 60px;
+  height: 80px;
+}
+.main .content-body .hero .categories-section .categorie-item5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-size: 14px;
+  width: 100%;
+  height: 15%;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.main .content-body .hero .categories-section .categorie-item5 img {
+  width: 60px;
+  height: 80px;
+}
+.main .content-body .hero .categories-section .categorie-item6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-size: 14px;
+  width: 100%;
+  height: 15%;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.main .content-body .hero .categories-section .categorie-item6 img {
+  width: 80px;
+  height: 80px;
 }
 .main .content-body .hero .hero-content-section {
   width: 100%;
