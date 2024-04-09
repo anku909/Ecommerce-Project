@@ -472,12 +472,11 @@
   min-height: 280vh;
   padding: 50px;
   background-color: white;
-  background-color: green;
 }
 @media screen and (max-width: 460px) {
   .main .content-body .page3 .page3-cards-section {
-    min-height: 100vh;
-    padding: 10px;
+    min-height: 370vh;
+    padding: 10px 5px;
   }
 }
 .main .content-body .page3 .page3-cards-section .top-selling-section {
@@ -485,23 +484,22 @@
   display: flex;
   margin-bottom: 30px;
   gap: 200px;
-  background-color: pink;
 }
 @media screen and (max-width: 460px) {
   .main .content-body .page3 .page3-cards-section .top-selling-section {
     margin-bottom: 10px;
-    gap: 20px;
+    height: 220px;
+    gap: 27px;
   }
 }
 .main .content-body .page3 .page3-cards-section .top-selling-section .season-top-picks {
   width: 500px;
   height: 580px;
   border: 1px solid rgb(227, 227, 227);
-  background: blue;
 }
 @media screen and (max-width: 460px) {
   .main .content-body .page3 .page3-cards-section .top-selling-section .season-top-picks {
-    width: 200px;
+    width: 160px;
     height: 200px;
   }
 }
@@ -512,12 +510,11 @@
   filter: drop-shadow(0px 4px 6px rgb(209, 208, 208));
   border-radius: 5px;
   position: relative;
-  background-color: yellow;
 }
 @media screen and (max-width: 460px) {
   .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling {
-    width: 100px;
-    height: 400px;
+    width: 240px;
+    height: 200px;
   }
 }
 .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling .heading-text {
@@ -528,7 +525,9 @@
 }
 @media screen and (max-width: 460px) {
   .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling .heading-text {
-    height: 20px;
+    padding-top: 8px;
+    padding-left: 10px;
+    height: 45px;
   }
 }
 .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling .heading-text h2 {
@@ -536,7 +535,7 @@
 }
 @media screen and (max-width: 460px) {
   .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling .heading-text h2 {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling .heading-text p {
@@ -546,7 +545,7 @@
 }
 @media screen and (max-width: 460px) {
   .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling .heading-text p {
-    font-size: 4px;
+    font-size: 7px;
     padding-top: 5px;
   }
 }
@@ -559,12 +558,13 @@
   bottom: 0px;
   left: 140px;
   transition: all 0.3s ease-in;
-  background-color: cyan;
 }
 @media screen and (max-width: 460px) {
   .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling img {
     width: 200px;
     height: 200px;
+    bottom: -10px;
+    left: 45px;
   }
 }
 .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling img:hover {
@@ -583,6 +583,14 @@
   filter: drop-shadow(0px 4px 2px rgb(199, 199, 199));
   transition: all 0.3s ease;
 }
+@media screen and (max-width: 460px) {
+  .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling button {
+    width: 70px;
+    height: 20px;
+    bottom: 30px;
+    left: 20px;
+  }
+}
 .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling button:hover {
   scale: 0.98;
 }
@@ -593,14 +601,24 @@
   text-decoration: none;
   color: rgb(79, 79, 79);
 }
+@media screen and (max-width: 460px) {
+  .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling button a {
+    font-size: 8px;
+  }
+}
 .main .content-body .page3 .page3-cards-section .page3-cards-grid {
   width: 100%;
   height: 200vh;
   padding: 10px 10px;
   display: flex;
   flex-wrap: wrap;
-  gap: 52px;
-  justify-content: start;
+  justify-content: space-between;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page3 .page3-cards-section .page3-cards-grid {
+    min-height: 350vh;
+    padding: 10px 0px;
+  }
 }
 .main .content-body .page3 .page3-cards-section .page3-cards-grid .page3-card {
   width: 220px;
@@ -613,6 +631,14 @@
   border: 1px solid rgb(234, 234, 234);
   transition: all 0.2s ease-in;
 }
+@media screen and (max-width: 460px) {
+  .main .content-body .page3 .page3-cards-section .page3-cards-grid .page3-card {
+    width: 180px;
+    height: 150px;
+    padding-top: 10px;
+    margin-top: 20px;
+  }
+}
 .main .content-body .page3 .page3-cards-section .page3-cards-grid .page3-card:hover {
   border: 1px solid rgb(199, 199, 199);
 }
@@ -622,6 +648,12 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media screen and (max-width: 460px) {
+  .main .content-body .page3 .page3-cards-section .page3-cards-grid .page3-card img {
+    width: 100px;
+    height: 100px;
+  }
+}
 .main .content-body .page3 .page3-cards-section .page3-cards-grid .page3-card img:hover {
   scale: 1.03;
 }
@@ -630,6 +662,13 @@
   height: 30px;
   margin-top: 15px;
 }
+@media screen and (max-width: 460px) {
+  .main .content-body .page3 .page3-cards-section .page3-cards-grid .page3-card .text-title-div {
+    width: 150px;
+    height: 10px;
+    margin-top: 8px;
+  }
+}
 .main .content-body .page3 .page3-cards-section .page3-cards-grid .page3-card .text-title-div h4 {
   font-size: 16px;
   font-weight: 500;
@@ -637,6 +676,11 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page3 .page3-cards-section .page3-cards-grid .page3-card .text-title-div h4 {
+    font-size: 10px;
+  }
 }
 .main .content-body .page4 {
   width: 100%;

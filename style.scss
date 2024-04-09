@@ -427,29 +427,27 @@
         min-height: 280vh;
         padding: 50px;
         background-color: white;
-        background-color: green;
         @include mobile {
-          min-height: 100vh;
-          padding: 10px;
+          min-height: 370vh;
+          padding: 10px 5px;
         }
         .top-selling-section {
           width: 100%;
           display: flex;
           margin-bottom: 30px;
           gap: 200px;
-          background-color: pink;
           @include mobile {
             margin-bottom: 10px;
-            gap: 20px;
+            height: 220px;
+            gap: 27px;
           }
 
           .season-top-picks {
             width: 500px;
             height: 580px;
             border: 1px solid rgb(227, 227, 227);
-            background: blue;
             @include mobile {
-              width: 200px;
+              width: 160px;
               height: 200px;
             }
           }
@@ -460,10 +458,9 @@
             filter: drop-shadow(0px 4px 6px rgb(209, 208, 208));
             border-radius: 5px;
             position: relative;
-            background-color: yellow;
             @include mobile {
-              width: 100px;
-              height: 400px;
+              width: 240px;
+              height: 200px;
             }
             .heading-text {
               width: 100%;
@@ -471,12 +468,14 @@
               padding-top: 20px;
               padding-left: 20px;
               @include mobile {
-                height: 20px;
+                padding-top: 8px;
+                padding-left: 10px;
+                height: 45px;
               }
               h2 {
                 font-size: 40px;
                 @include mobile {
-                  font-size: 10px;
+                  font-size: 14px;
                 }
               }
               p {
@@ -484,7 +483,7 @@
                 font-size: 18px;
                 font-weight: 300;
                 @include mobile {
-                  font-size: 4px;
+                  font-size: 7px;
                   padding-top: 5px;
                 }
               }
@@ -498,10 +497,11 @@
               bottom: 0px;
               left: 140px;
               transition: all 0.3s ease-in;
-              background-color: cyan;
               @include mobile {
                 width: 200px;
                 height: 200px;
+                bottom: -10px;
+                left: 45px;
               }
               &:hover {
                 scale: 1.02;
@@ -519,6 +519,12 @@
               outline: none;
               filter: drop-shadow(0px 4px 2px rgb(199, 199, 199));
               transition: all 0.3s ease;
+              @include mobile {
+                width: 70px;
+                height: 20px;
+                bottom: 30px;
+                left: 20px;
+              }
 
               &:hover {
                 scale: 0.98;
@@ -530,6 +536,9 @@
                 font-family: Georgia, "Times New Roman", Times, serif;
                 text-decoration: none;
                 color: rgb(79, 79, 79);
+                @include mobile {
+                  font-size: 8px;
+                }
               }
             }
           }
@@ -540,8 +549,11 @@
           padding: 10px 10px;
           display: flex;
           flex-wrap: wrap;
-          gap: 52px;
-          justify-content: start;
+          justify-content: space-between;
+          @include mobile {
+            min-height: 350vh;
+            padding: 10px 0px;
+          }
 
           .page3-card {
             width: 220px;
@@ -554,6 +566,13 @@
             border: 1px solid rgb(234, 234, 234);
             transition: all 0.2s ease-in;
 
+            @include mobile {
+              width: 180px;
+              height: 150px;
+              padding-top: 10px;
+              margin-top: 20px;
+            }
+
             &:hover {
               border: 1px solid rgb(199, 199, 199);
             }
@@ -562,6 +581,10 @@
               width: 190px;
               height: 140px;
               object-fit: contain;
+              @include mobile {
+                width: 100px;
+                height: 100px;
+              }
               &:hover {
                 scale: 1.03;
               }
@@ -570,6 +593,11 @@
               width: 200px;
               height: 30px;
               margin-top: 15px;
+              @include mobile {
+                width: 150px;
+                height: 10px;
+                margin-top: 8px;
+              }
               h4 {
                 font-size: 16px;
                 font-weight: 500;
@@ -577,6 +605,9 @@
                 text-overflow: ellipsis;
                 overflow: hidden;
                 white-space: nowrap;
+                @include mobile {
+                  font-size: 10px;
+                }
               }
             }
           }
