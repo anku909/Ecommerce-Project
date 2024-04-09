@@ -298,7 +298,7 @@
 }
 @media screen and (max-width: 460px) {
   .main .content-body .page-2 {
-    height: 140vh;
+    height: 70vh;
     padding-top: 40px;
   }
 }
@@ -332,10 +332,10 @@
 }
 @media screen and (max-width: 460px) {
   .main .content-body .page-2 .cards-grid {
-    height: 320px;
+    height: 300px;
     margin-top: 40px;
     padding: 0px 0px;
-    gap: 6px;
+    gap: 2px;
   }
 }
 .main .content-body .page-2 .cards-grid .card {
@@ -393,6 +393,12 @@
   min-height: 100vh;
   padding-top: 80px;
 }
+@media screen and (max-width: 460px) {
+  .main .content-body .page3 {
+    height: 100vh;
+    padding-top: 10px;
+  }
+}
 .main .content-body .page3 .feature-brands-section {
   width: 100%;
   height: 240px;
@@ -401,8 +407,21 @@
   border: 1px solid rgb(211, 208, 208);
   background-color: white;
 }
+@media screen and (max-width: 460px) {
+  .main .content-body .page3 .feature-brands-section {
+    height: 100px;
+    margin-bottom: 50px;
+    padding: 0px 8px;
+  }
+}
 .main .content-body .page3 .feature-brands-section .heading h2 {
   padding-top: 20px;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page3 .feature-brands-section .heading h2 {
+    padding-top: 10px;
+    font-size: 14px;
+  }
 }
 .main .content-body .page3 .feature-brands-section .brands-details-section {
   width: 100%;
@@ -412,6 +431,12 @@
   justify-content: start;
   gap: 80px;
   margin-top: 10px;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page3 .feature-brands-section .brands-details-section {
+    gap: 12px;
+    margin-top: 0px;
+  }
 }
 .main .content-body .page3 .feature-brands-section .brands-details-section .brand-details {
   display: flex;
@@ -423,10 +448,21 @@
   border-radius: 50%;
   transition: border 0.2s ease;
 }
+@media screen and (max-width: 460px) {
+  .main .content-body .page3 .feature-brands-section .brands-details-section .brand-details {
+    width: 40px;
+    height: 40px;
+  }
+}
 .main .content-body .page3 .feature-brands-section .brands-details-section .brand-details img {
   width: 60px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page3 .feature-brands-section .brands-details-section .brand-details img {
+    width: 25px;
+  }
 }
 .main .content-body .page3 .feature-brands-section .brands-details-section .brand-details:hover {
   border: 1px solid rgb(199, 199, 199);
@@ -436,17 +472,38 @@
   min-height: 280vh;
   padding: 50px;
   background-color: white;
+  background-color: green;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page3 .page3-cards-section {
+    min-height: 100vh;
+    padding: 10px;
+  }
 }
 .main .content-body .page3 .page3-cards-section .top-selling-section {
   width: 100%;
   display: flex;
   margin-bottom: 30px;
   gap: 200px;
+  background-color: pink;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page3 .page3-cards-section .top-selling-section {
+    margin-bottom: 10px;
+    gap: 20px;
+  }
 }
 .main .content-body .page3 .page3-cards-section .top-selling-section .season-top-picks {
   width: 500px;
   height: 580px;
   border: 1px solid rgb(227, 227, 227);
+  background: blue;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page3 .page3-cards-section .top-selling-section .season-top-picks {
+    width: 200px;
+    height: 200px;
+  }
 }
 .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling {
   width: 800px;
@@ -455,6 +512,13 @@
   filter: drop-shadow(0px 4px 6px rgb(209, 208, 208));
   border-radius: 5px;
   position: relative;
+  background-color: yellow;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling {
+    width: 100px;
+    height: 400px;
+  }
 }
 .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling .heading-text {
   width: 100%;
@@ -462,13 +526,29 @@
   padding-top: 20px;
   padding-left: 20px;
 }
+@media screen and (max-width: 460px) {
+  .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling .heading-text {
+    height: 20px;
+  }
+}
 .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling .heading-text h2 {
   font-size: 40px;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling .heading-text h2 {
+    font-size: 10px;
+  }
 }
 .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling .heading-text p {
   padding-top: 12px;
   font-size: 18px;
   font-weight: 300;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling .heading-text p {
+    font-size: 4px;
+    padding-top: 5px;
+  }
 }
 .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling img {
   width: 550px;
@@ -479,6 +559,13 @@
   bottom: 0px;
   left: 140px;
   transition: all 0.3s ease-in;
+  background-color: cyan;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling img {
+    width: 200px;
+    height: 200px;
+  }
 }
 .main .content-body .page3 .page3-cards-section .top-selling-section .yearly-top-selling img:hover {
   scale: 1.02;
