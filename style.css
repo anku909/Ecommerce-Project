@@ -351,7 +351,7 @@
 }
 @media screen and (max-width: 460px) {
   .main .content-body .page-2 .cards-grid .card {
-    width: 105px;
+    width: 102px;
     height: 120px;
     border-radius: 4px;
     border: 1px solid rgb(225, 225, 225);
@@ -395,7 +395,7 @@
 }
 @media screen and (max-width: 460px) {
   .main .content-body .page3 {
-    height: 100vh;
+    min-height: 410vh;
     padding-top: 10px;
   }
 }
@@ -475,7 +475,7 @@
 }
 @media screen and (max-width: 460px) {
   .main .content-body .page3 .page3-cards-section {
-    min-height: 370vh;
+    min-height: 390vh;
     padding: 10px 5px;
   }
 }
@@ -686,11 +686,22 @@
   width: 100%;
   min-height: 100vh;
   padding: 60px 0px;
+  background-color: red;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page4 {
+    padding: 20px 0px;
+  }
 }
 .main .content-body .page4 .page4-content-box {
   width: 100%;
   height: 350px;
   background-color: white;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page4 .page4-content-box {
+    height: 120px;
+  }
 }
 .main .content-body .page4 .page4-content-box img {
   width: 100%;
@@ -704,6 +715,7 @@
   margin-top: 60px;
   padding: 20px 0px;
   background-color: white;
+  background-color: pink;
 }
 .main .content-body .page4 .all-best-mix .top-div {
   width: 100%;
@@ -711,6 +723,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: blue;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page4 .all-best-mix .top-div {
+    height: 40px;
+  }
 }
 .main .content-body .page4 .all-best-mix .top-div .title-div {
   width: 800px;
@@ -721,6 +739,11 @@
   font-weight: 600;
   padding-left: 10px;
 }
+@media screen and (max-width: 460px) {
+  .main .content-body .page4 .all-best-mix .top-div .title-div h4 {
+    font-size: 15px;
+  }
+}
 .main .content-body .page4 .all-best-mix .top-div .controls {
   width: 120px;
   height: 80px;
@@ -728,12 +751,25 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: rgb(159, 155, 155);
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page4 .all-best-mix .top-div .controls {
+    width: 180px;
+    height: 40px;
+  }
 }
 .main .content-body .page4 .all-best-mix .top-div .controls .left-btn {
   width: 45px;
   height: 45px;
   border: 1px solid rgb(221, 221, 221);
   border-radius: 50%;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page4 .all-best-mix .top-div .controls .left-btn {
+    width: 30px;
+    height: 30px;
+  }
 }
 .main .content-body .page4 .all-best-mix .top-div .controls .left-btn:hover {
   background-color: #f3f3f3;
@@ -743,6 +779,12 @@
   height: 45px;
   border: 1px solid rgb(221, 221, 221);
   border-radius: 50%;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page4 .all-best-mix .top-div .controls .right-btn {
+    width: 30px;
+    height: 30px;
+  }
 }
 .main .content-body .page4 .all-best-mix .top-div .controls .right-btn:hover {
   background-color: #f3f3f3;
