@@ -618,9 +618,9 @@
       width: 100%;
       min-height: 100vh;
       padding: 60px 0px;
-      background-color: red;
 
       @include mobile {
+        min-height: 70vh;
         padding: 20px 0px;
       }
       .page4-content-box {
@@ -643,7 +643,9 @@
         margin-top: 60px;
         padding: 20px 0px;
         background-color: white;
-        background-color: pink;
+        @include mobile {
+          height: 250px;
+        }
         .top-div {
           width: 100%;
           height: 60px;
@@ -651,7 +653,6 @@
           justify-content: space-between;
           align-items: center;
           // background-color: rgb(228, 228, 227);
-          background-color: blue;
           @include mobile {
             height: 40px;
           }
@@ -675,7 +676,6 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background-color: rgb(159, 155, 155);
             @include mobile {
               width: 180px;
               height: 40px;
@@ -688,6 +688,7 @@
               @include mobile {
                 width: 30px;
                 height: 30px;
+                border: 1px solid rgb(193, 193, 193);
               }
               &:hover {
                 background-color: #f3f3f3;
@@ -701,6 +702,7 @@
               @include mobile {
                 width: 30px;
                 height: 30px;
+                border: 1px solid rgb(193, 193, 193);
               }
               &:hover {
                 background-color: #f3f3f3;
@@ -726,7 +728,11 @@
             display: flex;
             justify-content: start;
             gap: 30px;
-            // background-color: red;
+            @include mobile {
+              min-width: 800%;
+              height: 40%;
+              gap: 15px;
+            }
 
             .mix-card {
               width: 260px;
@@ -738,6 +744,12 @@
               border: 1px solid rgb(237, 237, 237);
               border-radius: 10px;
               transition: all 0.2s ease-in;
+              @include mobile {
+                width: 200px;
+                height: 160px;
+                border: 1px solid rgb(214, 214, 214);
+                border-radius: 6px;
+              }
               &:hover {
                 border: 1px solid rgb(194, 194, 194);
               }
@@ -746,6 +758,11 @@
                 height: 140px;
                 object-fit: scale-down;
                 transition: all 0.3s ease;
+                @include mobile {
+                  width: 100px;
+                  height: 90px;
+                  margin-top: 10px;
+                }
                 &:hover {
                   scale: 1.03;
                 }
@@ -755,6 +772,11 @@
                 width: 200px;
                 height: 30px;
                 margin-top: 20px;
+                @include mobile {
+                  width: 130px;
+                  height: 20px;
+                  margin-top: 10px;
+                }
                 h4 {
                   overflow: hidden;
                   text-overflow: ellipsis;
@@ -762,6 +784,9 @@
                   font-size: 14px;
                   font-weight: 500;
                   text-align: center;
+                  @include mobile {
+                    font-size: 9px;
+                  }
                 }
               }
             }
@@ -777,6 +802,9 @@
       justify-content: start;
       flex-wrap: wrap;
       gap: 10px;
+      background-color: red;
+      @include mobile {
+      }
       .cards-types {
         width: 350px;
         height: 450px;
@@ -784,6 +812,10 @@
         border: 1px solid rgb(227, 227, 227);
         filter: drop-shadow(0px 2px 8px rgb(232, 232, 232));
         background-color: white;
+        @include mobile {
+          width: 200px;
+          height: 250px;
+        }
 
         .heading-text {
           width: 100%;
@@ -791,9 +823,15 @@
           display: flex;
           align-items: center;
           // background-color: red;
+          @include mobile {
+            height: 20px;
+          }
           h4 {
             font-size: 18px;
             font-weight: 500;
+            @include mobile {
+              font-size: 10px;
+            }
           }
         }
         .small-cards-div {
@@ -801,12 +839,20 @@
           height: 75%;
           display: flex;
           flex-wrap: wrap;
-          justify-content: center;
+          justify-content: start;
           align-items: center;
           gap: 10px;
+          @include mobile {
+            height: 80%;
+            gap: 10px;
+          }
           .small-card {
             width: 140px;
             height: 140px;
+            @include mobile {
+              width: 80px;
+              height: 80px;
+            }
 
             img {
               width: 100%;
@@ -845,7 +891,7 @@
         #top-big-card {
           width: 100%;
           height: 42%;
-          background-color: pink;
+
           img {
             width: 100%;
             height: 100%;
@@ -860,12 +906,12 @@
           justify-content: start;
           align-items: center;
           gap: 6px;
-          // background-color: rosybrown;
+
           .bottom-card {
             width: 120px;
             height: 80px;
             margin-top: 15px;
-            // background-color: orange;
+
             img {
               width: 100%;
               height: 100%;
@@ -879,11 +925,17 @@
         }
         .see-more-option {
           margin-top: 12px;
+          @include mobile {
+            margin-top: 2px;
+          }
           a {
             color: rgb(14, 164, 251);
             text-decoration: none;
             font-size: 15px;
             font-weight: 400;
+            @include mobile {
+              font-size: 12px;
+            }
           }
         }
       }
