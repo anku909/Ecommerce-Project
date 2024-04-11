@@ -264,10 +264,11 @@
 
     .page-2 {
       width: 100%;
-      height: 160vh;
+      height: 140vh;
       padding-top: 70px;
+      background-color: pink;
       @include mobile {
-        height: 70vh;
+        height: 75vh;
         padding-top: 40px;
       }
 
@@ -293,10 +294,11 @@
         padding: 30px 10px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: start;
+        justify-content: space-around;
         align-items: center;
         gap: 30px;
         background-color: white;
+        background-color: orange;
         @include mobile {
           height: 300px;
           margin-top: 40px;
@@ -325,7 +327,7 @@
           }
           img {
             transition: all 0.2s ease;
-            width: 230px;
+            width: 250px;
             margin-top: 40px;
             @include mobile {
               margin-top: 0px;
@@ -386,7 +388,7 @@
           height: 70%;
           display: flex;
           align-items: center;
-          justify-content: start;
+          justify-content: space-between;
           gap: 80px;
           margin-top: 10px;
 
@@ -424,7 +426,7 @@
 
       .page3-cards-section {
         width: 100%;
-        min-height: 280vh;
+        min-height: 240vh;
         padding: 50px;
         background-color: white;
         @include mobile {
@@ -545,13 +547,14 @@
         }
         .page3-cards-grid {
           width: 100%;
-          height: 200vh;
-          padding: 10px 10px;
+          height: 170vh;
+          padding: 50px 10px;
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
+
           @include mobile {
-            min-height: 350vh;
+            min-height: 370vh;
             padding: 10px 0px;
           }
 
@@ -621,7 +624,7 @@
 
       @include mobile {
         min-height: 70vh;
-        padding: 20px 0px;
+        padding: 60px 0px;
       }
       .page4-content-box {
         width: 100%;
