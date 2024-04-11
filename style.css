@@ -887,15 +887,21 @@
   min-height: 120vh;
   padding: 30px 0px;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 10px;
-  background-color: red;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page5 {
+    min-height: 100vh;
+    gap: 22px;
+    margin-bottom: 20px;
+  }
 }
 .main .content-body .page5 .cards-types {
   width: 350px;
   height: 450px;
-  padding: 10px 10px;
+  padding: 10px 20px;
   border: 1px solid rgb(227, 227, 227);
   filter: drop-shadow(0px 2px 8px rgb(232, 232, 232));
   background-color: white;
@@ -904,6 +910,7 @@
   .main .content-body .page5 .cards-types {
     width: 200px;
     height: 250px;
+    padding: 10px 10px;
   }
 }
 .main .content-body .page5 .cards-types .heading-text {
@@ -931,14 +938,15 @@
   height: 75%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   gap: 10px;
 }
 @media screen and (max-width: 460px) {
   .main .content-body .page5 .cards-types .small-cards-div {
     height: 80%;
-    gap: 10px;
+    justify-content: center;
+    gap: 12px;
   }
 }
 .main .content-body .page5 .cards-types .small-cards-div .small-card {
@@ -947,7 +955,7 @@
 }
 @media screen and (max-width: 460px) {
   .main .content-body .page5 .cards-types .small-cards-div .small-card {
-    width: 80px;
+    width: 82px;
     height: 80px;
   }
 }
@@ -962,16 +970,27 @@
 }
 .main .content-body .page5 .cards-types .mid-card {
   width: 100%;
-  height: 73%;
+  height: 75%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 460px) {
+  .main .content-body .page5 .cards-types .mid-card {
+    height: 80%;
+  }
+}
 .main .content-body .page5 .cards-types .mid-card img {
-  width: 300px;
-  height: 300px;
+  width: 330px;
+  height: 320px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page5 .cards-types .mid-card img {
+    width: 180px;
+    height: 180px;
+  }
 }
 .main .content-body .page5 .cards-types #card-joy {
   width: 100%;
@@ -980,21 +999,42 @@
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 460px) {
+  .main .content-body .page5 .cards-types #card-joy {
+    height: 80%;
+  }
+}
 .main .content-body .page5 .cards-types #card-joy img {
   width: 300px;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 460px) {
+  .main .content-body .page5 .cards-types #card-joy img {
+    width: 180px;
+    height: 180px;
+  }
+}
 .main .content-body .page5 .cards-types #top-big-card {
   width: 100%;
   height: 42%;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page5 .cards-types #top-big-card {
+    height: 38%;
+  }
 }
 .main .content-body .page5 .cards-types #top-big-card img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page5 .cards-types #top-big-card p {
+    font-size: 12px;
+  }
 }
 .main .content-body .page5 .cards-types .small-bottom-cards-div {
   width: 100%;
@@ -1004,10 +1044,23 @@
   align-items: center;
   gap: 6px;
 }
+@media screen and (max-width: 460px) {
+  .main .content-body .page5 .cards-types .small-bottom-cards-div {
+    height: 42%;
+  }
+}
 .main .content-body .page5 .cards-types .small-bottom-cards-div .bottom-card {
   width: 120px;
   height: 80px;
   margin-top: 15px;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page5 .cards-types .small-bottom-cards-div .bottom-card {
+    border-color: blue;
+    width: 80px;
+    height: 40px;
+    margin-top: 8px;
+  }
 }
 .main .content-body .page5 .cards-types .small-bottom-cards-div .bottom-card img {
   width: 100%;
@@ -1018,6 +1071,11 @@
 }
 .main .content-body .page5 .cards-types .small-bottom-cards-div .bottom-card p {
   font-size: 13px;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page5 .cards-types .small-bottom-cards-div .bottom-card p {
+    font-size: 8px;
+  }
 }
 .main .content-body .page5 .cards-types .see-more-option {
   margin-top: 12px;
@@ -1056,6 +1114,14 @@
   outline: none;
   background-color: rgb(27, 27, 27);
 }
+@media screen and (max-width: 460px) {
+  .main .footer .go-to-top {
+    width: 200px;
+    height: 150px;
+    border-radius: 40px;
+    top: 20px;
+  }
+}
 .main .footer .go-to-top a {
   color: white;
   font-size: 35px;
@@ -1068,6 +1134,11 @@
   font-family: "Verdana";
   transition: all 0.5s ease;
   animation: growNshrink 0.9s 0.2s infinite alternate ease-in-out;
+}
+@media screen and (max-width: 460px) {
+  .main .footer .go-to-top a {
+    font-size: 25px;
+  }
 }
 @keyframes growNshrink {
   from {

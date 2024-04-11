@@ -799,22 +799,25 @@
       min-height: 120vh;
       padding: 30px 0px;
       display: flex;
-      justify-content: start;
+      justify-content: space-between;
       flex-wrap: wrap;
       gap: 10px;
-      background-color: red;
       @include mobile {
+        min-height: 100vh;
+        gap: 22px;
+        margin-bottom: 20px;
       }
       .cards-types {
         width: 350px;
         height: 450px;
-        padding: 10px 10px;
+        padding: 10px 20px;
         border: 1px solid rgb(227, 227, 227);
         filter: drop-shadow(0px 2px 8px rgb(232, 232, 232));
         background-color: white;
         @include mobile {
           width: 200px;
           height: 250px;
+          padding: 10px 10px;
         }
 
         .heading-text {
@@ -822,7 +825,6 @@
           height: 50px;
           display: flex;
           align-items: center;
-          // background-color: red;
           @include mobile {
             height: 20px;
           }
@@ -839,18 +841,19 @@
           height: 75%;
           display: flex;
           flex-wrap: wrap;
-          justify-content: start;
+          justify-content: center;
           align-items: center;
           gap: 10px;
           @include mobile {
             height: 80%;
-            gap: 10px;
+            justify-content: center;
+            gap: 12px;
           }
           .small-card {
             width: 140px;
             height: 140px;
             @include mobile {
-              width: 80px;
+              width: 82px;
               height: 80px;
             }
 
@@ -865,14 +868,21 @@
         }
         .mid-card {
           width: 100%;
-          height: 73%;
+          height: 75%;
           display: flex;
           align-items: center;
           justify-content: center;
+          @include mobile {
+            height: 80%;
+          }
           img {
-            width: 300px;
-            height: 300px;
+            width: 330px;
+            height: 320px;
             object-fit: cover;
+            @include mobile {
+              width: 180px;
+              height: 180px;
+            }
           }
         }
         #card-joy {
@@ -881,21 +891,37 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          @include mobile {
+            height: 80%;
+          }
           img {
             width: 300px;
             height: 300px;
             object-fit: cover;
+            @include mobile {
+              width: 180px;
+              height: 180px;
+            }
           }
         }
 
         #top-big-card {
           width: 100%;
           height: 42%;
+          @include mobile {
+            height: 38%;
+          }
 
           img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+          }
+
+          p {
+            @include mobile {
+              font-size: 12px;
+            }
           }
         }
 
@@ -906,11 +932,20 @@
           justify-content: start;
           align-items: center;
           gap: 6px;
+          @include mobile {
+            height: 42%;
+          }
 
           .bottom-card {
             width: 120px;
             height: 80px;
             margin-top: 15px;
+            @include mobile {
+              border-color: blue;
+              width: 80px;
+              height: 40px;
+              margin-top: 8px;
+            }
 
             img {
               width: 100%;
@@ -920,6 +955,9 @@
             }
             p {
               font-size: 13px;
+              @include mobile {
+                font-size: 8px;
+              }
             }
           }
         }
@@ -944,7 +982,6 @@
   .footer {
     width: 100%;
     height: 40vh;
-    // background-color: pink;
     position: relative;
     .go-to-top {
       width: 300px;
@@ -958,6 +995,12 @@
       border: none;
       outline: none;
       background-color: rgb(27, 27, 27);
+      @include mobile {
+        width: 200px;
+        height: 150px;
+        border-radius: 40px;
+        top: 20px;
+      }
       a {
         color: white;
         font-size: 35px;
@@ -971,6 +1014,9 @@
         transition: all 0.5s ease;
         animation: growNshrink 0.9s 0.2s infinite alternate ease-in-out;
 
+        @include mobile {
+          font-size: 25px;
+        }
         @keyframes growNshrink {
           from {
             scale: 0.9;
@@ -990,6 +1036,8 @@
       z-index: 999;
       border: none;
       background-color: rgb(27, 27, 27);
+      @include mobile {
+      }
     }
   }
 }
