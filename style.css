@@ -894,7 +894,6 @@
 @media screen and (max-width: 460px) {
   .main .content-body .page5 {
     min-height: 100vh;
-    gap: 22px;
     margin-bottom: 20px;
   }
 }
