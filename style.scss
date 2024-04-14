@@ -34,14 +34,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      cursor: default;
-      background-color: red;
+      cursor: pointer;
       h2 {
         font-size: 2.5rem;
         font-weight: 500;
         @include mobile {
           font-size: 1.2rem;
-          font-family: 600;
         }
       }
     }
@@ -88,7 +86,6 @@
       display: flex;
       align-items: center;
       gap: 80px;
-      background-color: pink;
       cursor: pointer;
       @include mobile {
         width: 38%;
