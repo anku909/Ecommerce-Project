@@ -32,9 +32,6 @@ const store3CardsData = async () => {
 store3CardsData();
 function page3Cards(data) {
   data.products.forEach((item) => {
-    console.log(item);
-    console.log(cardGrid);
-
     let card = document.createElement("div");
     card.classList.add("page3-card");
     let image = document.createElement("img");
@@ -67,3 +64,23 @@ function loadImage(data) {
     imageCardsDiv.appendChild(cardDiv);
   });
 }
+
+let currIndex = 0;
+
+let images = [
+  "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1534723452862-4c874018d66d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1540340061722-9293d5163008?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+];
+let image = document.getElementById("top-content-img");
+function changeHeroSectionImg() {
+  image.src = images[currIndex];
+  currIndex++;
+
+  if (currIndex >= images.length) {
+    currIndex = 0;
+  }
+}
+
+setInterval(changeHeroSectionImg, 10 * 1000);
