@@ -35,10 +35,10 @@
       align-items: center;
       cursor: pointer;
       h2 {
-        font-size: 2.5rem;
-        font-weight: 500;
+        font-size: 1.5rem;
+        font-weight: 600;
         @include mobile {
-          font-size: 1.2rem;
+          font-size: 0.8rem;
         }
       }
     }
@@ -131,6 +131,10 @@
         img {
           width: 25px;
           height: 25px;
+          @include mobile {
+            width: 20px;
+            height: 20px;
+          }
         }
       }
     }
@@ -977,7 +981,7 @@
   }
   .footer {
     width: 100%;
-    height: 45vh;
+    height: 40vh;
     position: relative;
     .go-to-top {
       width: 300px;
@@ -1026,7 +1030,7 @@
 
     .footer-content-div {
       width: 100%;
-      height: 40vh;
+      height: 35vh;
       position: absolute;
       top: 60px;
       z-index: 999;
@@ -1043,53 +1047,67 @@
 
       .upper-section {
         width: 100%;
-        height: 40vh;
+        height: 25vh;
         position: absolute;
         top: 2px;
         z-index: 999;
-        padding: 50px 0px;
+        padding: 20px 0px;
+        padding-left: 50px;
         display: flex;
         justify-content: space-around;
         border: none;
         .about-section {
           width: 10%;
-          height: 80%;
-          background-color: rgb(104, 102, 103);
+          height: 100%;
           color: white;
           display: flex;
           flex-direction: column;
-          align-items: center;
+          align-items: start;
           p {
-            font-size: 16px;
-            font-weight: 300;
-            color: white;
+            font-size: 14px;
+            font-weight: 400;
+            color: rgb(212, 208, 208);
           }
           .details-section {
             width: 100%;
             height: 80%;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: start;
             justify-content: start;
-            padding-top: 20px;
-            background-color: rgb(151, 135, 138);
+            padding-top: 5px;
+
+            a {
+              text-decoration: none;
+              color: white;
+              font-size: 14px;
+              font-weight: 400;
+            }
           }
         }
 
         .line-vertical {
           width: 1px;
           height: 80%;
-          background-color: white;
+          background-color: rgba(173, 170, 170, 0.641);
         }
       }
     }
     .line-horizontal {
       width: 100%;
       height: 1px;
-      background-color: white;
+      background-color: rgba(173, 170, 170, 0.641);
     }
     .footer-bottom-section {
       width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      p {
+        font-size: 14px;
+        font-weight: 300;
+        color: white;
+      }
     }
   }
 }

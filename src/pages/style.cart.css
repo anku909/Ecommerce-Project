@@ -46,8 +46,8 @@
 }
 @media screen and (max-width: 460px) {
   .cart-body header .logo a h2 {
-    font-size: 1.2rem;
-    font-family: 600;
+    font-size: 0.8rem;
+    font-weight: 600;
   }
 }
 .cart-body header .searchbar {
