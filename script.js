@@ -3,10 +3,10 @@ let cardGrid = document.querySelector(".page3-cards-grid");
 let cardsDivScroll = document.querySelector(".all-mix-cards-div");
 
 function onLeftClick() {
-  cardsDivScroll.scrollLeft += -1000;
+  cardsDivScroll.scrollLeft += -500;
 }
 function onRightClick() {
-  cardsDivScroll.scrollLeft += 1000;
+  cardsDivScroll.scrollLeft += 500;
 }
 
 const storedetails = async () => {

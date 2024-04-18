@@ -799,34 +799,54 @@
 .main .content-body .page4 .all-best-mix .top-div .controls .left-btn {
   width: 45px;
   height: 45px;
-  border: 1px solid rgb(221, 221, 221);
+  border: 1px solid rgb(237, 236, 236);
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 460px) {
   .main .content-body .page4 .all-best-mix .top-div .controls .left-btn {
     width: 30px;
     height: 30px;
-    border: 1px solid rgb(193, 193, 193);
   }
 }
 .main .content-body .page4 .all-best-mix .top-div .controls .left-btn:hover {
   background-color: #f3f3f3;
 }
+.main .content-body .page4 .all-best-mix .top-div .controls .left-btn i {
+  font-size: 40px;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page4 .all-best-mix .top-div .controls .left-btn i {
+    font-size: 22px;
+  }
+}
 .main .content-body .page4 .all-best-mix .top-div .controls .right-btn {
   width: 45px;
   height: 45px;
-  border: 1px solid rgb(221, 221, 221);
+  border: 1px solid rgb(237, 236, 236);
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 460px) {
   .main .content-body .page4 .all-best-mix .top-div .controls .right-btn {
     width: 30px;
     height: 30px;
-    border: 1px solid rgb(193, 193, 193);
   }
 }
 .main .content-body .page4 .all-best-mix .top-div .controls .right-btn:hover {
   background-color: #f3f3f3;
+}
+.main .content-body .page4 .all-best-mix .top-div .controls .right-btn i {
+  font-size: 40px;
+}
+@media screen and (max-width: 460px) {
+  .main .content-body .page4 .all-best-mix .top-div .controls .right-btn i {
+    font-size: 22px;
+  }
 }
 .main .content-body .page4 .all-best-mix .all-mix-cards-div {
   width: 100%;
@@ -1277,8 +1297,13 @@
 }
 .main .footer .footer-content-div .upper-section .line-vertical {
   width: 1px;
-  height: 80%;
-  background-color: rgba(173, 170, 170, 0.641);
+  height: 17vh;
+  background-color: rgb(238, 235, 235);
+}
+@media screen and (max-width: 460px) {
+  .main .footer .footer-content-div .upper-section .line-vertical {
+    height: 9vh;
+  }
 }
 .main .footer .line-horizontal {
   width: 100%;

@@ -712,29 +712,45 @@
             .left-btn {
               width: 45px;
               height: 45px;
-              border: 1px solid rgb(221, 221, 221);
+              border: 1px solid rgb(237, 236, 236);
               border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
               @include mobile {
                 width: 30px;
                 height: 30px;
-                border: 1px solid rgb(193, 193, 193);
               }
               &:hover {
                 background-color: #f3f3f3;
+              }
+              i {
+                font-size: 40px;
+                @include mobile {
+                  font-size: 22px;
+                }
               }
             }
             .right-btn {
               width: 45px;
               height: 45px;
-              border: 1px solid rgb(221, 221, 221);
+              border: 1px solid rgb(237, 236, 236);
               border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
               @include mobile {
                 width: 30px;
                 height: 30px;
-                border: 1px solid rgb(193, 193, 193);
               }
               &:hover {
                 background-color: #f3f3f3;
+              }
+              i {
+                font-size: 40px;
+                @include mobile {
+                  font-size: 22px;
+                }
               }
             }
           }
@@ -1141,8 +1157,11 @@
 
         .line-vertical {
           width: 1px;
-          height: 80%;
-          background-color: rgba(173, 170, 170, 0.641);
+          height: 17vh;
+          background-color: rgb(238, 235, 235);
+          @include mobile {
+            height: 9vh;
+          }
         }
       }
     }
