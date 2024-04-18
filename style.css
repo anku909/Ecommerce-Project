@@ -1102,6 +1102,11 @@
   height: 40vh;
   position: relative;
 }
+@media screen and (max-width: 460px) {
+  .main .footer {
+    height: 30vh;
+  }
+}
 .main .footer .go-to-top {
   width: 300px;
   height: 150px;
@@ -1163,9 +1168,13 @@
   border: none;
   background-color: rgb(27, 27, 27);
 }
+@media screen and (max-width: 460px) {
+  .main .footer .footer-content-div {
+    height: 25vh;
+  }
+}
 .main .footer .footer-content-div .upper-section {
   width: 100%;
-  height: 25vh;
   position: absolute;
   top: 2px;
   z-index: 999;
@@ -1175,18 +1184,37 @@
   justify-content: space-around;
   border: none;
 }
+@media screen and (max-width: 460px) {
+  .main .footer .footer-content-div .upper-section {
+    height: 15vh;
+    padding: 10px 0px;
+    padding-left: 10px;
+    justify-content: start;
+    gap: 13px;
+  }
+}
 .main .footer .footer-content-div .upper-section .about-section {
-  width: 10%;
   height: 100%;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: start;
 }
+@media screen and (max-width: 460px) {
+  .main .footer .footer-content-div .upper-section .about-section {
+    width: 13%;
+    height: 90%;
+  }
+}
 .main .footer .footer-content-div .upper-section .about-section p {
   font-size: 14px;
   font-weight: 400;
   color: rgb(212, 208, 208);
+}
+@media screen and (max-width: 460px) {
+  .main .footer .footer-content-div .upper-section .about-section p {
+    font-size: 4px;
+  }
 }
 .main .footer .footer-content-div .upper-section .about-section .details-section {
   width: 100%;
@@ -1197,11 +1225,22 @@
   justify-content: start;
   padding-top: 5px;
 }
+@media screen and (max-width: 460px) {
+  .main .footer .footer-content-div .upper-section .about-section .details-section {
+    height: 80%;
+  }
+}
 .main .footer .footer-content-div .upper-section .about-section .details-section a {
   text-decoration: none;
   color: white;
   font-size: 14px;
   font-weight: 400;
+}
+@media screen and (max-width: 460px) {
+  .main .footer .footer-content-div .upper-section .about-section .details-section a {
+    font-size: 5px;
+    text-wrap: wrap;
+  }
 }
 .main .footer .footer-content-div .upper-section .line-vertical {
   width: 1px;
@@ -1223,4 +1262,9 @@
   font-size: 14px;
   font-weight: 300;
   color: white;
+}
+@media screen and (max-width: 460px) {
+  .main .footer .footer-bottom-section p {
+    font-size: 6px;
+  }
 }/*# sourceMappingURL=style.css.map */
