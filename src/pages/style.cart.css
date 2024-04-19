@@ -40,7 +40,7 @@
   text-decoration: none;
 }
 .cart-body header .logo a h2 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: black;
 }
@@ -227,4 +227,181 @@
   scale: 0.97;
   transition: scale 0.3s ease;
   cursor: pointer;
+}
+.cart-body .footer {
+  width: 100%;
+  height: 40vh;
+  margin-top: 50px;
+  position: relative;
+}
+@media screen and (max-width: 460px) {
+  .cart-body .footer {
+    height: 30vh;
+  }
+}
+.cart-body .footer .go-to-top {
+  width: 300px;
+  height: 150px;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50px;
+  z-index: 9;
+  border: none;
+  outline: none;
+  background-color: rgb(27, 27, 27);
+}
+@media screen and (max-width: 460px) {
+  .cart-body .footer .go-to-top {
+    width: 200px;
+    height: 150px;
+    border-radius: 40px;
+    top: 20px;
+  }
+}
+.cart-body .footer .go-to-top a {
+  color: white;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Verdana";
+  transition: all 0.5s ease;
+  animation: growNshrink 0.9s 0.2s infinite alternate ease-in-out;
+}
+@media screen and (max-width: 460px) {
+  .cart-body .footer .go-to-top a {
+    font-size: 25px;
+  }
+}
+@keyframes growNshrink {
+  from {
+    scale: 0.9;
+  }
+  to {
+    scale: 1.2;
+  }
+}
+.cart-body .footer .footer-content-div {
+  width: 100%;
+  height: 35vh;
+  position: absolute;
+  top: 60px;
+  z-index: 999;
+  padding: 50px 0px;
+  justify-content: end;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background-color: rgb(27, 27, 27);
+}
+@media screen and (max-width: 460px) {
+  .cart-body .footer .footer-content-div {
+    height: 25vh;
+  }
+}
+.cart-body .footer .footer-content-div .upper-section {
+  width: 100%;
+  position: absolute;
+  top: 2px;
+  z-index: 999;
+  padding: 20px 0px;
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-around;
+  border: none;
+}
+@media screen and (max-width: 460px) {
+  .cart-body .footer .footer-content-div .upper-section {
+    height: 15vh;
+    padding: 10px 0px;
+    padding-left: 10px;
+    justify-content: start;
+    gap: 13px;
+  }
+}
+.cart-body .footer .footer-content-div .upper-section .about-section {
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+@media screen and (max-width: 460px) {
+  .cart-body .footer .footer-content-div .upper-section .about-section {
+    width: 13%;
+    height: 90%;
+  }
+}
+.cart-body .footer .footer-content-div .upper-section .about-section p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(212, 208, 208);
+}
+@media screen and (max-width: 460px) {
+  .cart-body .footer .footer-content-div .upper-section .about-section p {
+    font-size: 4px;
+  }
+}
+.cart-body .footer .footer-content-div .upper-section .about-section .details-section {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding-top: 5px;
+}
+@media screen and (max-width: 460px) {
+  .cart-body .footer .footer-content-div .upper-section .about-section .details-section {
+    height: 80%;
+  }
+}
+.cart-body .footer .footer-content-div .upper-section .about-section .details-section a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+@media screen and (max-width: 460px) {
+  .cart-body .footer .footer-content-div .upper-section .about-section .details-section a {
+    font-size: 5px;
+    text-wrap: wrap;
+  }
+}
+.cart-body .footer .footer-content-div .upper-section .line-vertical {
+  width: 1px;
+  height: 17vh;
+  background-color: rgb(238, 235, 235);
+}
+@media screen and (max-width: 460px) {
+  .cart-body .footer .footer-content-div .upper-section .line-vertical {
+    height: 9vh;
+  }
+}
+.cart-body .footer .line-horizontal {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(173, 170, 170, 0.641);
+}
+.cart-body .footer .footer-bottom-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cart-body .footer .footer-bottom-section p {
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+}
+@media screen and (max-width: 460px) {
+  .cart-body .footer .footer-bottom-section p {
+    font-size: 6px;
+  }
 }/*# sourceMappingURL=style.cart.css.map */

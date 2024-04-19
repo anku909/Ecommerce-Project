@@ -37,7 +37,7 @@
   cursor: pointer;
 }
 .main header .logo h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 @media screen and (max-width: 460px) {
@@ -319,6 +319,10 @@
 .main .content-body .page-2 .page-banner-content img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .main .content-body .page-2 .cards-grid {
   width: 100%;
